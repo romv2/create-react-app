@@ -1,0 +1,30 @@
+{
+  "name": "cra-template-romv2",
+  "version": "1.0.0",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "romv2"
+  ],
+  "description": "The romv2 template for Create React App.",
+  "main": "template.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/romv2/create-react-app.git",
+    "directory": "packages/cra-template-romv2"
+  },
+  "author": "romv2",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "bugs": {
+    "url": "https://github.com/romv2/create-react-app/issues"
+  },
+  "homepage": "https://github.com/romv2/create-react-app#readme",
+  "files": [
+    "template",
+    "template.json"
+  ]
+}
