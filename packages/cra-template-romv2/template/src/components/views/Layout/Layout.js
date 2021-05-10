@@ -1,11 +1,13 @@
 import { Component } from 'react'
-import stylesDefault from './styles/LayoutDefault.scss'
+import styles from './Layout.scss'
 
 class Layout extends Component {
     selectStyle() {
         switch (this.props.layoutStyle) {
             case 'default':
-                return stylesDefault.LayoutDefault
+                return styles.LayoutDefault
+            case 'clear':
+                return styles.LayoutClearHTML
             default:
                 console.error('empty name in Layout prop - check the props, given to Layout component')
                 break
@@ -14,7 +16,7 @@ class Layout extends Component {
     render() {
         return (
             <>
-                <div className={this.selectStyle()}>{this.props.children}</div>
+                <div styleName={this.selectStyle()}>{this.props.children}</div>
             </>
         )
     }
