@@ -1,9 +1,8 @@
-import { Component } from 'react'
 import styles from './Layout.scss'
 
-class Layout extends Component {
-    selectStyle() {
-        switch (this.props.layoutStyle) {
+function Layout(props) {
+    function selectStyle(layoutStyle) {
+        switch (layoutStyle) {
             case 'default':
                 return styles.LayoutDefault
             case 'clear':
@@ -13,13 +12,8 @@ class Layout extends Component {
                 break
         }
     }
-    render() {
-        return (
-            <>
-                <div styleName={this.selectStyle()}>{this.props.children}</div>
-            </>
-        )
-    }
+
+    return <div className={selectStyle(props.layoutStyle)}>{props.children}</div>
 }
 
 export default Layout

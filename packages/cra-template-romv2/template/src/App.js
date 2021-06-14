@@ -1,21 +1,12 @@
-import React, { Component } from 'react'
+import JSONplaceholder from './components/models/json/JSONplaceholder'
 import Layout from './components/views/Layout/Layout'
 
-
-class App extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {}
-    }
-    render() {
-        return (
-            <>
-                <Layout layoutStyle='default'>
-
-                </Layout>
-            </>
-        )
-    }
+function App() {
+    return (
+        <Layout layoutStyle='default'>
+            <JSONplaceholder type='todos' />
+        </Layout>
+    )
 }
 
 export default App
